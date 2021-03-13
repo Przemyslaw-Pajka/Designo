@@ -1,0 +1,95 @@
+$main-header-color: #E7816B;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+ul,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+.root {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.top-header__nav {
+    padding-top: 2.1875rem;
+    padding-bottom: 2.1875rem;
+}
+
+.hamburger {
+    background-image: url("https://mocnyjakub.github.io/images/shared/mobile/icon-hamburger.svg");
+    width: 24px;
+    height: 20px;
+    border: 0px;
+    transform: translateY(3px);
+}
+.nav__menu {
+    display: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+        padding: 0px 20px;
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                cursor: pointer;
+               text-decoration: underline;
+            }
+        }
+    }
+}
+.top-header{
+    .top-header__nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        .nav__logo {
+            width: 200px;
+            height: 30px;
+            display: block;
+        }
+        
+    }
+}
+
+.main-header {
+    background: $main-header-color;
+    display: flex;
+    height: 40rem;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10%;
+    .main-header__text-box {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .nav__menu {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    .top-header__nav {
+        padding: 4rem 2.5rem;
+    }
+    .main-header__text-box {
+        width: 50%;
+    }
+}
