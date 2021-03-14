@@ -1,5 +1,8 @@
 $main-header-color: #E7816B;
 
+button {
+    border: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -50,7 +53,7 @@ ul,h1,h2,h3,h4,h5,h6,p {
     }
 }
 .top-header{
-    .top-header__nav {
+    &__nav {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -71,10 +74,22 @@ ul,h1,h2,h3,h4,h5,h6,p {
     align-items: center;
     border-radius: 20px;
     padding: 0 10%;
-    .main-header__text-box {
+    
+    &__text-box {
         h1 {
             font-size: 3rem;
         }
+    }
+    &__button {
+        padding: 1.125rem 1.5rem;
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #333136;
+        background-color: #FfffFF;
+        border-radius: .5rem;
+        font-weight: 500;
+        transition: background-color .2s ease-in, color .3s ease-in;
     }
 }
 
@@ -92,5 +107,10 @@ ul,h1,h2,h3,h4,h5,h6,p {
     }
     .main-header__text-box {
         width: 50%;
+    }
+    .main-header__button:hover {
+        background-color: #FFAD9B;
+        color: #FfffFF;
+        cursor: pointer;
     }
 }
