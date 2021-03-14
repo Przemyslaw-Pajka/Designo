@@ -78,10 +78,9 @@ h1,h2,h3 {
 .main-header {
     background: $main-header-color;
     display: flex;
-    height: 40rem;
+    padding: 5.5rem;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
     border-radius: 0;
     
     &__text-box {
@@ -122,14 +121,21 @@ h1,h2,h3 {
             padding: 4rem 0;
         }
     }
+    .cta-text {
+        padding: 0 8%;
+    }
     .main-header {
         margin: 0 40px;
         border-radius: 20px;
+        padding: 9.5rem 0;
 
         &__text-box {
             text-align: left;
             h1,p {
                 padding-bottom: 2.5rem;
+            }
+            p {
+                padding-right: 11%;
             }
         }
         &__button:hover {
