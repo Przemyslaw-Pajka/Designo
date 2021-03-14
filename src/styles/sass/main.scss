@@ -17,6 +17,9 @@ img {
 ul,h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
+h1,h2,h3 {
+    font-weight: 500;
+}
 .root {
     max-width: 1280px;
     margin: 0 auto;
@@ -107,6 +110,13 @@ ul,h1,h2,h3,h4,h5,h6,p {
     }
     .main-header__text-box {
         width: 50%;
+        h1 {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        h1,p {
+            padding-bottom: 2.5rem;
+        }
     }
     .main-header__button:hover {
         background-color: #FFAD9B;
