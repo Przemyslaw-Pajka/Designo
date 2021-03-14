@@ -1,6 +1,11 @@
 $main-header-color: #E7816B;
 $bg-pattern-hero-phone: "../../images/home/bg-pattern-hero-home.svg";
 $hero-phone-img: "../../images/home/image-hero-phone.png";
+
+.pm-aside {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
 button {
     border: 0;
 }
@@ -24,7 +29,6 @@ h1,h2,h3 {
 .root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 .top-header__nav {
     padding-top: 2.1875rem;
@@ -77,12 +81,17 @@ h1,h2,h3 {
     height: 40rem;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
     padding: 0 10%;
+    border-radius: 0;
     
     &__text-box {
+        text-align: center;
         h1 {
             font-size: 3rem;
+            line-height: 3rem;
+        }
+        h1,p {
+            padding-bottom: 1.875rem;
         }
     }
     &__button {
@@ -107,16 +116,18 @@ h1,h2,h3 {
     .hamburger {
         display: none;
     }
-    .top-header__nav {
-        padding: 4rem 0;
+    .top-header {
+        padding: 0rem 2.5rem;
+        &__nav {
+            padding: 4rem 0;
+        }
     }
     .main-header {
-    
+        margin: 0 40px;
+        border-radius: 20px;
+
         &__text-box {
-            h1 {
-                font-size: 3rem;
-                line-height: 3rem;
-            }
+            text-align: left;
             h1,p {
                 padding-bottom: 2.5rem;
             }
