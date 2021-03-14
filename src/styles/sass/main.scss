@@ -1,5 +1,6 @@
 $main-header-color: #E7816B;
-
+$bg-pattern-hero-phone: "../../images/home/bg-pattern-hero-home.svg";
+$hero-phone-img: "../../images/home/image-hero-phone.png";
 button {
     border: 0;
 }
@@ -75,6 +76,7 @@ h1,h2,h3 {
     display: flex;
     height: 40rem;
     align-items: center;
+    justify-content: center;
     border-radius: 20px;
     padding: 0 10%;
     
@@ -108,19 +110,34 @@ h1,h2,h3 {
     .top-header__nav {
         padding: 4rem 0;
     }
-    .main-header__text-box {
-        width: 50%;
-        h1 {
-            font-size: 3rem;
-            line-height: 3rem;
+    .main-header {
+    
+        &__text-box {
+            h1 {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+            h1,p {
+                padding-bottom: 2.5rem;
+            }
         }
-        h1,p {
-            padding-bottom: 2.5rem;
+        &__button:hover {
+            background-color: #FFAD9B;
+            color: #FfffFF;
+            cursor: pointer;
         }
-    }
-    .main-header__button:hover {
-        background-color: #FFAD9B;
-        color: #FfffFF;
-        cursor: pointer;
     }
 }
+@media screen and (min-width: 1024px) {
+    .main-header {
+        background-image: url($hero-phone-img), url($bg-pattern-hero-phone);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-position: center right;
+        justify-content: flex-start;
+        &__text-box {
+            width: 50%;
+        }
+    }
+}
+
