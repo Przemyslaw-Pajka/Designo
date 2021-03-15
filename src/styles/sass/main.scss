@@ -187,6 +187,56 @@ h1,h2,h3 {
         }
     }
 }
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #E7816B;
+    margin: 0 1.5rem;
+    border-radius: 0.9375rem;
+    background-image: url('../../images/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    background-size: 240%;
+    transform: translateY(50%);
+    height: 23.75rem;
+    padding: 0 1.5rem;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        h3 {
+            font-size: 2rem;
+            line-height: 2.25rem;
+            padding-bottom: 1.5rem;
+        }
+        p {
+            padding-bottom: 3rem;
+        }
+        button {
+            padding: 0 2rem;
+            height: 3.8rem;
+            font-size: 16px;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #333136;
+            background-color: #FfffFF;
+            border-radius: .5rem;
+            font-weight: 700;
+            transition: background-color .2s ease-in, color .3s ease-in;
+            &:hover {
+                background-color: #FFAD9B;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 
 @media screen and (min-width: 420px) {
     .design__wrapper  {
@@ -254,6 +304,8 @@ h1,h2,h3 {
         }
     }
 }
+
+
 @media screen and (min-width: 1024px) {
     .main-header {
         background-image: url($hero-phone-img), url($bg-pattern-hero-phone);
@@ -302,6 +354,25 @@ h1,h2,h3 {
         .features__item {
             &__img {
                 margin-bottom: 3.125rem;
+            }
+        }
+    }
+    .contact-us {
+        &__wrapper {
+            flex-direction: row;
+            text-align: left;
+            .text-box {
+                flex: 5;
+                h3 {
+                    font-size: 2.5rem;
+                    padding-right: 20rem;
+                }
+                p {
+                   width: 80%;
+                }
+            }
+            button {
+                flex: 1;
             }
         }
     }
