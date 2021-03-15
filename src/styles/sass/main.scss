@@ -1,4 +1,5 @@
 $main-header-color: #E7816B;
+$container-max-width: 1280px;
 $bg-pattern-hero-phone: "../../images/home/bg-pattern-hero-home.svg";
 $hero-phone-img: "../../images/home/image-hero-phone.png";
 
@@ -28,7 +29,7 @@ h1,h2,h3 {
     font-weight: 500;
 }
 .root {
-    max-width: 1280px;
+    max-width: $container-max-width;
     margin: 0 auto;
 }
 .top-header__nav {
@@ -236,7 +237,78 @@ h1,h2,h3 {
         }
     }
 }
-
+footer {
+    background-color: #1D1C1E;
+    padding: 18.75rem 2.5rem 6.25rem;
+    .footer__wrapper {
+        max-width: $container-max-width;
+        width: max-content;
+        margin: 0 auto;
+        color: #fff;
+        .footer__nav {
+            text-align: center;
+            margin: 0 auto;
+            &__logo {
+                display: block;
+                height: 1.875rem;
+                width: 12.5rem;
+                margin: 0 auto;
+                padding-bottom: 1.875rem;
+                border-bottom:  2px solid #333136;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            ul {
+                padding: 0;
+                list-style-type: none;;
+            }
+            a {
+                display: block;
+                padding-top: 1.875rem;
+                color: #fff;
+                text-decoration: none;
+               
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .footer__bot {
+            .footer__contact-info {
+                address {
+                    padding: 3.125rem 0;
+                    text-align: center;
+                    p:not(:first-child) {
+                        color: #f1f3f599;
+                    }
+                    &:last-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+            .footer__socials {
+                display: flex;
+                padding: 0;
+                justify-content: space-between;
+                li {
+                    list-style-type: none;
+                    a {
+                        opacity: 0.6;
+                        img {
+                            width: auto;
+                            height: auto;
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 420px) {
     .design__wrapper  {
@@ -303,6 +375,49 @@ h1,h2,h3 {
             }
         }
     }
+    footer {
+        .footer__wrapper {
+            width: auto;
+            .footer__nav {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid #333136;
+                
+                &__logo {
+                    margin: 0;
+                    border: none;
+                }
+                ul {
+                    display: flex;
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 2.5rem;
+                        }
+                    }
+                }
+            }
+            .footer__bot {
+                display: flex;
+                padding-top: 2.5rem;
+                justify-content: space-between;
+                align-items: flex-end;
+                .footer__contact-info {
+                    display: flex;
+                    address {
+                        padding: 0;
+                        &:first-child {
+                            padding-right: 4.375rem;
+                        }
+                    }
+                }
+                .footer__socials {
+                    li:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -358,6 +473,7 @@ h1,h2,h3 {
         }
     }
     .contact-us {
+        margin: 0;
         &__wrapper {
             flex-direction: row;
             text-align: left;
