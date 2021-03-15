@@ -4,7 +4,12 @@
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-
+const topHeaderNav = document.getElementById('top-header__nav');
+document.getElementById('hamburger').addEventListener("click",(e)=>{
+    const hamburger = e.target;
+    hamburger.classList.toggle("close")
+    topHeaderNav.classList.toggle("active")
+})
   
 // ReactDOM.render(
 //   <React.StrictMode>

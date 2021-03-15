@@ -39,10 +39,38 @@ h1,h2,h3 {
 
 .hamburger {
     background-image: url("https://mocnyjakub.github.io/images/shared/mobile/icon-hamburger.svg");
+    background-repeat: no-repeat;
     width: 24px;
     height: 20px;
     border: 0px;
     transform: translateY(3px);
+
+    &.close {
+        background-image: url('../../images/shared/mobile/icon-close.svg');
+    }
+}
+.top-header__nav.active {
+    position: static;
+    .nav__menu {
+        position: absolute;
+        left: 0;
+        top: 99.98px;
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        background: #1D1C1E;
+        width: 100%;
+        animation: over-animation .3s ease-in-out;
+        li {
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+            &:not(:last-child) {
+                padding-bottom: 3.5rem;
+            }
+        }
+    }
 }
 .nav__menu {
     display: none;
@@ -510,3 +538,13 @@ footer {
     }
 }
 
+@keyframes over-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
