@@ -181,8 +181,7 @@ h1,h2,h3 {
                 height: auto;
             }
             h3 {
-                letter-spacing: 0.3125rem;
-                padding-top: 2.125rem;
+                letter-spacing: 0.3125rem; 
             }
       
         }
@@ -365,14 +364,21 @@ footer {
     .features__wrapper {
         padding: 5rem 2.5rem;
         padding-bottom: 0;
-        flex-direction: row;
+        flex-direction: column;
         .features__item {
-            h3 {
-                padding-top: 0;
-                padding-bottom: 1.875rem;
-            }
-            p {
-                padding: 0 13px;
+            display: flex;
+            text-align: left;
+            
+            .features__item__text {
+                padding-left: 25px;
+                padding-top: 35px;
+                h3 {
+                    padding-top: 0;
+                    padding-bottom: 1.875rem;
+                }
+                p {
+                    padding: 0;
+                }
             }
         }
     }
@@ -467,9 +473,18 @@ footer {
         }
     }
     .features__wrapper {
+        flex-direction: row;
         .features__item {
+            flex-direction: column;
+            text-align: center;
+            .features__item__text {
+                padding: 0 15px;
+            }
             &__img {
+                margin: 0 auto;
                 margin-bottom: 3.125rem;
+                width: 190px;
+                height: 160px;
             }
         }
     }
