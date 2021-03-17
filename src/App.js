@@ -4,12 +4,12 @@ import './App.css';
 import React from 'react';
 
 function App() {
-//   const topHeaderNav = document.getElementById('top-header__nav');
-// document.getElementById('hamburger').addEventListener("click",(e)=>{
-//     const hamburger = e.target;
-//     hamburger.classList.toggle("close")
-//     topHeaderNav.classList.toggle("active")
-// })
+  const hamburgerClick = (e) => {
+    const topHeaderNav = document.getElementById('top-header__nav')
+    const hamburger = e.target;
+    hamburger.classList.toggle("close")
+    topHeaderNav.classList.toggle("active")
+  }
   return (
     <React.Fragment>
     <header className="top-header pm-aside">
@@ -22,7 +22,7 @@ function App() {
         <li><a href="#">LOCATIONS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
-      <button className="hamburger" id="hamburger"></button>
+      <button className="hamburger" id="hamburger" onClick={(e)=> hamburgerClick(e)}></button>
     </nav>
   </header>
   <header className="main-header">
