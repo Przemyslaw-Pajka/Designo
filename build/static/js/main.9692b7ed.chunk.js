@@ -1,0 +1,2 @@
+(this.webpackJsonpdesigno=this.webpackJsonpdesigno||[]).push([[0],[function(e,t,n){"use strict";n.r(t);n(1);var s=document.getElementById("top-header__nav");document.getElementById("hamburger").addEventListener("click",(function(e){e.target.classList.toggle("close"),s.classList.toggle("active")}))},function(e,t,n){}],[[0,1]]]);
+//# sourceMappingURL=main.9692b7ed.chunk.js.map
