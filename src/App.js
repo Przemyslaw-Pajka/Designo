@@ -11,7 +11,7 @@ function App() {
 //     topHeaderNav.classList.toggle("active")
 // })
   return (
-    <>
+    <React.Fragment>
     <header className="top-header pm-aside">
     <nav className="top-header__nav" id="top-header__nav">
       <a className="nav__logo" href="#">
@@ -84,7 +84,7 @@ function App() {
       <button>GET IN TOUCH</button>
     </div>
   </section>
-  </>
+  </React.Fragment>
   );
 }
 
