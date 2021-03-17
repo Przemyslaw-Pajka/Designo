@@ -198,6 +198,9 @@ h1,h2,h3 {
             .right-arrow {
                 color: #E7816B;
             }
+            &:focus {
+                outline: 5px solid red;
+            }
         }
     }
 }
