@@ -4,12 +4,12 @@ import './App.css';
 import React from 'react';
 
 function App() {
-  const topHeaderNav = document.getElementById('top-header__nav');
-document.getElementById('hamburger').addEventListener("click",(e)=>{
-    const hamburger = e.target;
-    hamburger.classList.toggle("close")
-    topHeaderNav.classList.toggle("active")
-})
+//   const topHeaderNav = document.getElementById('top-header__nav');
+// document.getElementById('hamburger').addEventListener("click",(e)=>{
+//     const hamburger = e.target;
+//     hamburger.classList.toggle("close")
+//     topHeaderNav.classList.toggle("active")
+// })
   return (
     <>
     <header className="top-header pm-aside">
@@ -38,15 +38,15 @@ document.getElementById('hamburger').addEventListener("click",(e)=>{
     <div className="design__wrapper pm-aside">
       <a className="design__box" href="#">
         <h2>WEB DESIGN</h2>
-        <p>view projects <span className="right-arrow">></span></p>
+        <p>view projects <span className="right-arrow"></span></p>
       </a>
       <a className="design__box" href="#">
         <h2>APP DESIGN</h2>
-        <p>view projects <span className="right-arrow">></span></p>
+        <p>view projects <span className="right-arrow"></span></p>
       </a>
       <a className="design__box" href="#">
         <h2>GRAPHIC DESIGN</h2>
-        <p>view projects <span className="right-arrow">></span></p>
+        <p>view projects <span className="right-arrow"></span></p>
       </a>
     </div>
   </section>
