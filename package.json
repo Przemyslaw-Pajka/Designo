@@ -21,6 +21,7 @@
     "deploy": "gh-pages -d public",
     "scss": "node-sass --watch ./src/styles/sass -o ./src/styles/css"
   },
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
